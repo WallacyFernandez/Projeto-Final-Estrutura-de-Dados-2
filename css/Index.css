@@ -1,74 +1,144 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
 body {
     display: flex;
     align-items: center;
     margin: 0;
     overflow: hidden;
-    background-image: url('../Assets/pexels-helena-lopes-697244.jpg');
-    background-size: cover; /* Para ajustar a imagem ao tamanho da tela */
-    background-repeat: no-repeat; /* Para evitar repetição da imagem */
-    background-attachment: fixed; /* Para manter a imagem fixa à medida que você rola a página */
+    background-image: url(../Assets/pexels-kindel-media-7148671.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Poppins, sans-serif;
+    flex-direction: column;
+}
+h1{
+    color: whitesmoke;
+    align-self: center;
+    font-size: 30px;
+}
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #000000c9;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#conteiner{
+
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+
 }
 
 #sidebar {
     width: 35%;
-    height: 100%;
-    
+    height: 90%;
+
 }
 
-#sidebarcontent{
-    background-color: #f0f0f0;
+#sidebarcontent {
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #000000c9;
+    color: whitesmoke;
     padding: 15px;
     width: 70%;
     height: 100%;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0px 20px 20px 0px;
 }
 
-#sidebar li{
+#sidebar li {
     list-style: none;
     font-weight: 500;
 }
 
 #content {
+    display: flex;
     width: 400px;
     height: 400px;
-    background-color: #ffffff;
+    background-color: #000000c9;
     text-align: center;
     padding: 20px;
-    
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #000000;
+    flex-direction: column;
 }
 
-#result{
+#result {
     width: 100%;
     height: 80%;
+    color: whitesmoke;
     overflow: hidden;
     overflow: auto;
 }
 
 #content ul {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 #content li {
     list-style: none;
 }
 
+#content h2{
+
+    color: whitesmoke;
+    margin-top: 0;
+}
+#content button{
+
+        width: 50%;
+        align-self: center;
+        padding: 8px;
+        border-radius: 30px;
+    
+}
+
+#search-input{
+
+    padding: 10px;
+    width: 60%;
+    align-self: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+}
+
+
+
+#user-list{
+    padding: 0 0 0 20px;
+    width: 99%;
+    height: 80%;
+    overflow: auto;
+    font-size: 12px;
+}
 ::-webkit-scrollbar {
-position: absolute;
-width: 4px; /* Largura da barra de rolagem */
+    position: absolute;
+    width: 4px;
 }
+
 ::-webkit-scrollbar-thumb {
-background-color: #888; /* Cor do "polegar" da barra de rolagem */
-border-radius: 12px; /* Borda arredondada para o "polegar" */
+    background-color: #888;
+    border-radius: 12px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-background-color: #555; /* Cor do "polegar" ao passar o mouse sobre ele */
+    background-color: #555;
 }
+
 ::-webkit-scrollbar-track {
-background-color: #eeeeee00; /* Cor da trilha da barra de rolagem */
-height: 50%; /* Ajusta a altura para metade da altura da div */
-top: 25%; /* Centraliza a trilha na metade da altura da div */
+    background-color: #eeeeee00;
+    height: 50%;
+    top: 25%;
 }
