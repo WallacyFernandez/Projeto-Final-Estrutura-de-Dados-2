@@ -39,7 +39,7 @@ A função `searchConnections()` é ativada quando o botão "Buscar" é clicado.
 - Se o usuário não existir, mostra uma mensagem informando que o usuário não existe.
 
 ## Link para a Rede Social
-Você pode acessar a rede social simulada [clicando aqui](coloque_o_link_aqui).
+Você pode acessar a rede social simulada [clicando aqui](https://wallacyfernandez.github.io/Projeto-Final-Estrutura-de-Dados-2/).
 
 ## Exemplo de Uso
 
